@@ -16,7 +16,7 @@
 
 	 - hello Dart
 	 - variables
-	 - <datatype> <variablename> = value
+	 - datatype -variablename = value
 	 - var/final/const variableName = value
 	 - string/int/bool and null
 	 - if statements
