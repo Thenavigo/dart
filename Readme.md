@@ -14,4 +14,18 @@
 
 1. [Module 1: Getting Started]()
 
-	 - Hello Dart
+	 - hello Dart
+	 - variables
+	 - <datatype> <variablename> = value
+	 - var/final/const variableName = value
+	 - string/int/bool and null
+	 - if statements
+	 - ternary
+	 - switch statement
+	 - for loop
+	 - for in loop
+	 - while loop
+	 - do while loop
+
+
+2. [Module 2: Module 2]()
