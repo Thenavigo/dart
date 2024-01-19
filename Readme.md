@@ -29,3 +29,20 @@
 
 
 2. [Module 2: Module 2]()
+	
+	- Functions
+	- Class
+	- Polymorphism
+	- Abstraction
+	- Inheritance
+	- Encapsulation
+	- Mixin
+	- Mixes in
+	- Class modifiers
+	- List
+	- Map
+	- Enums
+	- Exception Handling
+	- Futures (Promises)
+	- More about pubspec.yaml
+	- Streams
