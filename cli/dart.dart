@@ -1,7 +1,14 @@
 //1- cd cli
 //2- dart run dart.dart
 
+//bool isAllowed = false;
+//bool isAllowed = true;
+
 void main() {
+    //isAllowed = !isAllowed;	
+    
+    String someValue = 'Hi';
+
   //Variables
   	//print('Hello, Dart!');
   	//print(4+1);
@@ -58,14 +65,65 @@ void main() {
   	//String? someValue8 = null;
   	//int? someValue9 = null;
 
-  	String? someValue;
-  	print(someValue);
-  	someValue = '564 Hello World';
-  	print(someValue.length);
-  	someValue = null;
-  	print(someValue?.length??0);
-  	someValue = null;
-  	print(someValue?.length??1);
+  	//String? someValue;
+  	//print(someValue);
+  	//someValue = '564 Hello World';
+  	//print(someValue.length);
+  	//someValue = null;
+  	//print(someValue?.length??0);
+  	//someValue = null;
+  	//print(someValue?.length??1);
 
+
+  // If Statements
+  	//int age = 21;
+
+  	//if(age>=21) {
+  	//	print('ADULT 21');
+  	//} else if(age>=18) {
+  	//	print('ADULT');
+  	//} else {
+  	//	print('CHILD');
+  	//}
+
+
+  	//int age = 18;
+
+  	// if(age!=21 || !isAllowed)
+
+  	//if(age!=21 && !isAllowed) {
+  	//	print('Hi');
+  	//} else {
+  	//	print('Hello');
+  	//}
+   
+
+  	if(someValue.startsWith('H')) {
+  		print('Welcome');
+  	} else {
+  		print('Yes');
+  	}
+
+  // Ternary
+  
+  //print(someValue.startsWith('Haa') ? 'Welcome' : 'Yes');
+  String value = someValue.startsWith('H') ? 'Welcome' : 'Yes';
+  print(value);	
+
+  // Switch Statement
+
+  switch(someValue) {
+  	case 'Hi':{
+  		print('Hello');
+  	} continue next;
+  	next:case 'Hi!!':{
+  		print('Hello!!');
+  	} break;
+  	case 'Hi!!!':{
+  		print('Hello!!!');
+  	} break;
+  	default:{
+  		print('YOOO');
+  	} break;
+  }
 }
-
