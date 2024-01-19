@@ -1,5 +1,5 @@
 //1- cd cli
-//2- dart run dart.dart
+//2- dart run module1.dart
 
 //bool isAllowed = false;
 //bool isAllowed = true;
@@ -7,7 +7,7 @@
 void main() {
     //isAllowed = !isAllowed;	
     
-    String someValue = 'Hi';
+    //String someValue = 'Hi';
 
   //Variables
   	//print('Hello, Dart!');
@@ -98,32 +98,102 @@ void main() {
   	//}
    
 
-  	if(someValue.startsWith('H')) {
-  		print('Welcome');
-  	} else {
-  		print('Yes');
-  	}
+  	//if(someValue.startsWith('H')) {
+  	//	print('Welcome');
+  	//} else {
+  	//	print('Yes');
+  	//}
 
   // Ternary
   
   //print(someValue.startsWith('Haa') ? 'Welcome' : 'Yes');
-  String value = someValue.startsWith('H') ? 'Welcome' : 'Yes';
-  print(value);	
+  //-String value = someValue.startsWith('H') ? 'Welcome' : 'Yes';
+  //print(value);	
 
   // Switch Statement
 
-  switch(someValue) {
-  	case 'Hi':{
-  		print('Hello');
-  	} continue next;
-  	next:case 'Hi!!':{
-  		print('Hello!!');
-  	} break;
-  	case 'Hi!!!':{
-  		print('Hello!!!');
-  	} break;
-  	default:{
-  		print('YOOO');
-  	} break;
-  }
+  //switch(someValue) {
+  	//case 'Hi':{
+  	//	print('Hello');
+  	//} continue next;
+  	//next:case 'Hi!!':{
+  	//	print('Hello!!');
+  	//} break;
+  	//case 'Hi!!!':{
+  	//	print('Hello!!!');
+  	//} break;
+  	//default:{
+  	//	print('YOOO');
+  	//} break;
+  //}
+
+  // Loops!
+
+  // For loop
+
+  // for(init; condition; increment/decrement) {
+  //
+  //}
+
+	//for(int i=0; i<10; i++) {
+	//	String hi = 'Hello World';
+	//	print(hi.substring(i, 11));
+	//	print('Hello World ${i+1}');
+	//	}
+
+
+	// for in loop
+	String value = 'Hello';
+
+	//for(int i=0; i<value.length; i++) {
+	//	print(value[i]);
+	//}
+
+
+/*For vs While Loop
+
+For Loop:
+
+- The for loop is used for definite loops when the number of iterations is known.
+
+- For loops can have their counter variables declared in the declaration itself.
+
+- This is preferable when we know exactly how many times the loop will be repeated.
+
+- The loop iterates infinite number of times if the condition is not specified.
+
+
+
+
+While Loop:
+
+- The while loop is used when the number of iterations is not known.
+
+- There is no built-in loop control variable with a while loop. 
+
+- The while loop will continue to run infinite number of times until the condition is met.
+
+- If the condition is not specified, it shows a compilation error.
+
+*/	
+
+	// While Loop
+
+	//int i = 0;
+
+	//while(i<value.length) {
+	//	print(value[i]);
+	//	i=i+1;
+	//}
+
+
+	// Do While Loops
+	int i = 0;
+
+	do {
+		print(value[i]);
+		i++;
+	} while(i<value.length);
 }
+
+
