@@ -143,7 +143,7 @@ void main() {
 
 
 	// for in loop
-	String value = 'Hello';
+	//String value = 'Hello';
 
 	//for(int i=0; i<value.length; i++) {
 	//	print(value[i]);
@@ -188,12 +188,23 @@ While Loop:
 
 
 	// Do While Loops
-	int i = 0;
+	//int i = 0;
 
-	do {
-		print(value[i]);
-		i++;
-	} while(i<value.length);
+	//do {
+	//	print(value[i]);
+	//	i++;
+	//} while(i<value.length);
+
+
+	//for(int i=0; i<value.length; i++) {
+	//	if(i == 1 || i == 2 || i == 3) {
+	//		//continue;
+	//		break;
+	//	}
+	//	print(value[i]);
+	//}
+
 }
+
 
 
