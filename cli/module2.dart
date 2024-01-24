@@ -60,15 +60,22 @@ void main() {
 	// Inheritance
 	// Object Oriented Programming (OOP)
 
-	Car car = Car();
+	//Car car = Car();
 
 	//print(car.isEngineWorking);
 	//print(car.noOfWheels);
 
-	Vehicule tnvg = Car();
-	print(tnvg.isEngineWorking);
-	print((tnvg as Car).noOfWheels);
+	//Vehicule tnvg = Car();
+	//print(tnvg.isEngineWorking);
+	//print((tnvg as Car).noOfWheels);
 
+	//print(car.isEngineWorking);
+	//print(car.greeting);
+
+
+	final car = Car();
+	car.accelerate();
+	print(car.speed);
 }
 
 
@@ -178,7 +185,7 @@ class Bank {
 class Constants {
 	static int height = 10;
 	static String greeting = 'Hello, how are you ?';
-	static String bye = 'Bye';
+	static String startup = 'Thenavigo';
 
 	static int giveMeSomeValue() {
 		return height;
@@ -191,16 +198,29 @@ class Constants {
 // Inheritance
 // Object Oriented Programming (OOP)
 
-class Vehicule {
+class SomeClass {
+	//final String greeting = 'Hi';
+	int speed = 15;
+
+	void accelerate() {
+		speed +=30;
+	}
+}
+
+
+
+class Vehicule extends SomeClass {
 	//variables
 
-	int speed = 15;
+	//int speed = 15;
 	bool isEngineWorking = false;
 	bool isLighOn = true;
 
 	//methods
+
+	@override
 	void accelerate() {
-		speed+= 23;
+		speed+=10;
 	}
 }
 
