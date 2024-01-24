@@ -66,8 +66,8 @@ void main() {
 	//print(car.noOfWheels);
 
 	Vehicule tnvg = Car();
-	print(car.isEngineWorking);
-	print((car as Car).noOfWheels);
+	print(tnvg.isEngineWorking);
+	print((tnvg as Car).noOfWheels);
 
 }
 
