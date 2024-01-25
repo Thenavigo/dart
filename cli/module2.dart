@@ -57,7 +57,6 @@ void main() {
 	//print(Constants.bye);
 	//print(Constants.giveMeSomeValue());
 
-	// Inheritance
 	// Object Oriented Programming (OOP)
 
 	//Car car = Car();
@@ -76,6 +75,12 @@ void main() {
 	final car = Car();
 	car.accelerate();
 	print(car.speed);
+
+
+	//1. Polymorphism
+	//2. Abstraction
+	//3. Inheritance
+	//4. Encapsulation
 }
 
 
