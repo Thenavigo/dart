@@ -121,12 +121,42 @@ void main() {
 
 
 	//List 
-	List list = [10, 20, 30];
+	//String greeting = 'Hello';
+	//print(greeting[0]);
 
-	print(list);
+	//List list = [10, 20, 30, 'Hi', false];
+	//List<int> list = [10, 20, 30];
+	//List<double> list = [10, 20, 30, 20.5];
+	//print(list);
+	//print(list[3]);
 
+	List companies = [
+		Company('company1'),
+		Company('company2'),
+		Company('company3'),
+		Company('company4'),
+			'Strings',
+			4,
+			false
+	];
+
+
+	final company = companies[5];
+	//print(company.name);
+
+	if(company is Company) {
+		print(company.name);
+	} else {
+		print(company);
+	}
 }
 
+
+class Company {
+	final String name;
+
+	Company(this.name);
+}
 
 
 // Functions
