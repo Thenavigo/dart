@@ -72,15 +72,40 @@ void main() {
 	//print(car.greeting);
 
 
-	final car = Car();
-	car.accelerate();
-	print(car.speed);
+	//final car = Car();
+	//car.accelerate();
+	//print(car.speed);
+
+	//final taxi = Taxi();
+	//print(taxi.noOfWheels);
+	//taxi.accelerate();
+
+
+	//final test2 = Test2();
+	//test2.accelerate();
 
 
 	//1. Polymorphism
+	//Cat cat = Cat();
+	//cat.sound();
+	//Dog dog = Dog();
+	//dog.sound();
+
 	//2. Abstraction
+	//Animal anim = Cat();
+	//anim.sound();
+	//Animal anim2 = Dog();
+	//anim2.sound();
+
 	//3. Inheritance
 	//4. Encapsulation
+
+
+	// mixin
+	// mixes in
+	final anim = Animal();
+	anim.fn();
+
 }
 
 
@@ -234,5 +259,146 @@ class Car extends Vehicule {
 
 	void printSomething() {
 		print(noOfWheels);
+	}
+}
+
+
+class OtherClass {
+	bool isEngineWorking = false;
+	bool isLightOn = true;
+	int noOfWheels = 12;
+}
+
+
+class Tesla {
+	int noOfWheels = 12;
+	void accelerate() {
+		print('accelerating tesla...');
+	}
+}
+
+
+class Taxi extends OtherClass implements Tesla {
+	@override
+	int noOfWheels = 5;
+
+	@override
+	void accelerate() {
+		print(isEngineWorking);
+		print(isLightOn);
+		print(noOfWheels);
+	}
+}
+
+class Truck implements Tesla {
+	@override
+	bool isEngineWorking = true;
+
+	@override
+	bool isLightOn = true;
+
+	@override
+	int noOfWheels = 7;
+
+
+	@override
+	void accelerate() {
+		print('accelerating the Truck');
+	}
+}
+
+
+//class Bike implements Tesla {
+//	
+//}
+
+
+abstract class Test {
+	void accelerate();
+}
+
+class Test2 implements Test {
+	@override
+	void accelerate() {
+		print('accelerating');
+	}
+}
+
+
+
+
+
+/* Start Polymorphism */
+
+
+/*class Animal {
+	void sound() {
+		print('Animal making sound');
+	}
+}*/
+
+
+/*class Cat extends Animal {
+	@override
+	void sound() {
+		print('Cat making sound');
+	}
+}*/
+
+
+/*class Dog extends Animal {
+	@override
+	void sound() {
+		print('Dog making sound');
+	}
+}*/
+
+/* End Polymorphism */
+
+
+
+
+
+/* Start Abstraction */
+
+/*abstract class Animal {
+	void sound();
+}*/
+
+
+/*class Cat extends Animal {
+	@override
+	void sound() {
+		print('Cat making sound');
+	}
+}*/
+
+/*class Dog extends Animal {
+	@override
+	void sound() {
+		print('Dog making sound');
+	}
+}*/
+
+
+/* End Abstraction */
+
+
+
+/*Mixin, mixes in*/
+
+mixin Jump {
+	int jumping = 10;	
+}
+
+mixin Scream {
+	bool isScreaming = false;
+}
+
+class Animal with Jump, Scream {
+	
+	void fn() {
+		print(jumping);
+		print(isScreaming);
 	}
 }
