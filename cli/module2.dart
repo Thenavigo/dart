@@ -103,8 +103,27 @@ void main() {
 
 	// mixin
 	// mixes in
-	final anim = Animal();
-	anim.fn();
+	//final anim = Animal();
+	//anim.fn();
+
+	//Class Modifiers
+	
+	//Animal animal = Cat();
+
+	/*switch(animal) {
+		case Dog():
+			print('dog');
+		case Cat():
+			print('cat');
+		case Human():
+			print('human');
+	}*/
+
+
+	//List 
+	List list = [10, 20, 30];
+
+	print(list);
 
 }
 
@@ -387,18 +406,33 @@ class Test2 implements Test {
 
 /*Mixin, mixes in*/
 
-mixin Jump {
+/*mixin Jump {
 	int jumping = 10;	
-}
+}*/
 
-mixin Scream {
+
+/*mixin Scream {
 	bool isScreaming = false;
-}
+}*/
 
-class Animal with Jump, Scream {
+
+/*class Animal with Jump, Scream {
 	
 	void fn() {
 		print(jumping);
 		print(isScreaming);
 	}
-}
+}*/
+
+
+
+
+//Class Modifiers
+
+
+// Library a.dart
+sealed class Animal {}
+class Human implements Animal {}
+class Dog implements Animal {}
+class Cat extends Animal {}
+
