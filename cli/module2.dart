@@ -130,25 +130,41 @@ void main() {
 	//print(list);
 	//print(list[3]);
 
-	List companies = [
-		Company('company1'),
+	final company1Comp = Company('company1');
+
+	List<Company> companies = [
+		company1Comp,
 		Company('company2'),
 		Company('company3'),
 		Company('company4'),
-			'Strings',
-			4,
-			false
 	];
 
 
-	final company = companies[5];
+	//final company = companies[5];
 	//print(company.name);
 
-	if(company is Company) {
-		print(company.name);
-	} else {
-		print(company);
-	}
+	//if(company is Company) {
+	//	print(company.name);
+	//} else {
+	//	print(company);
+	//}
+
+
+	print(companies);
+
+	//companies[3] = Company('New kid');
+
+	//companies.add(Company('New kid'));
+
+	companies.insert(0, Company('New kid'));	
+
+	print(companies);
+
+	companies.remove(company1Comp);
+
+	print(companies);
+
+
 }
 
 
@@ -156,6 +172,9 @@ class Company {
 	final String name;
 
 	Company(this.name);
+
+	@override
+	String toString() => 'Company: $name';
 }
 
 
